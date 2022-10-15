@@ -10,7 +10,7 @@ terraform {
 
   backend "s3" {
     bucket = "bfutema-remote-state"
-    key    = "aws-vpc/terraform.tfstate"
+    key    = "terraform.tfstate"
     region = "eu-central-1"
   }
 }
