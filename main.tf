@@ -7,6 +7,12 @@ terraform {
       version = "3.73.0"
     }
   }
+
+  backend "s3" {
+    bucket = "bfutema-remote-state"
+    key    = "aws-vpc/terraform.tfstate"
+    region = "eu-central-1"
+  }
 }
 
 provider "aws" {
